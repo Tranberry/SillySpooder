@@ -142,8 +142,8 @@ export const animal = [
 
 // :insertpluralnoun: + 2,3
 export const pluralNoun = [
-  'aardvarks ', 'cars ', 'calculators ', 'coals ', 'diamonds ', 'flutes ',
-  'hats ', 'kayaks ', 'load-screens ', 'otters ', 'undies ', 'irises ',
+  'gold ', 'cars ', 'calculators ', 'eggplants ', 'diamonds ', 'flutes ',
+  'hats ', 'kayaks ', 'carrots ', 'otters ', 'undies ', 'food ',
   'cuffs ', 'ropes ', 'tortoises ', 'whips ',
 ];
 
@@ -204,7 +204,7 @@ export const place = [
 // :insertnumber
 export const number = [
   'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
-  'ten', 'eleven', 'ninety-six',
+  'ten', 'eleven', 'ninety-six', 'four-houndred-twenty',
 ];
 
 // :insertwebsite:
