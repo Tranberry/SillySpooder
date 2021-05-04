@@ -4,6 +4,8 @@ import {
   website,
   colors,
   rhymeBlu,
+  illness,
+  suspects,
 } from './store.js';
 
 const nameOne = document.getElementById('customname1');
@@ -55,11 +57,12 @@ function result() {
   const weekdayItem = randomthingy(weekday);
   const veggieItem = randomthingy(veggie);
 
+  const illnessItem = randomthingy(illness);
   const bluRhyItem = randomthingy(rhymeBlu);
   const colorItem = randomthingy(colors);
 
-  const name1 = 'Cycy';
-  const name2 = 'Gwen';
+  const name1 = randomthingy(suspects);
+  const name2 = randomthingy(suspects);
 
   newQuote = newQuote
       .replace(/:insertadjective:/g, adjItem)
@@ -91,6 +94,7 @@ function result() {
       .replace(/:insertverb2:/g, verbItem2)
       .replace(/:insertvegetable:/g, veggieItem)
       .replace(/:insertBluRhyme:/g, bluRhyItem)
+      .replace(/:insertIllness:/g, illnessItem)
       .replace(/:insertcolor:/g, colorItem);
 
   // check if name 1 is present and regex it away otherwise not

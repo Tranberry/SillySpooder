@@ -6,23 +6,21 @@ export const QuoteText = [
   'Please excuse :Cycy: who is far too :insertadjective: to attend ' +
     ' :insertnoun: class.<br> Signed by :Gwen:',
 
-  ':Cycy: is sick with the :insertbodypart: flu. Drink more :insertfluid: ' +
-    'and take :insertsubstance: as needed.<br> Yours truly, :Gwen:',
+  ':Cycy: is sick with :insertIllness:. Drink more :insertfluid: ' +
+    'and take :insertsubstance: as needed.<br> - Dr.:Gwen:',
 
   ':Cycy: is authorized to be at the :insertplace: instead of :insertnoun: ' +
     ' class.<br> Signed by :Gwen:',
 
   ':Cycy: is too cool for :insertnoun: class. Instead they will be ' +
-    ' attending the :insertevent:',
+    ' attending the :insertevent:.',
 ];
 
 // :insertadjective: + 2,3,4,5
 export const adjective = [
-  'aback', 'caring', 'eager', 'equal', 'flagrant', 'friendly', 'glossy',
-  'halting', 'helpless', 'ill', 'irate', 'lavish', 'madly', 'military',
-  'nebulous', 'obese', 'opposite', 'penitent', 'pricey', 'quirky',
-  'rhetorical', 'scandalous', 'sincere', 'spotless', 'tangy', 'thundering',
-  'unhealthy', 'waiting',
+  'caring', 'eager', 'flagrant', 'friendly', 'glossy', 'helpless', 'ill',
+  'irate', 'lavish', 'quirky', 'rhetorical', 'scandalous', 'sincere',
+  'spotless',
 ];
 
 // :insertnoun: + 2,3
@@ -59,25 +57,26 @@ export const animal = [
 
 // :insertpluralnoun: + 2,3
 export const pluralNoun = [
-  'aardvarks ', 'benches ', 'calculators ', 'coals ', 'diamonds ', 'flutes ',
-  'hats ', 'kayaks ', 'mascaras ', 'otters ', 'pockets ', 'sails ', 'sleds ',
-  'streams ', 'tortoises ', 'whips ',
+  'aardvarks ', 'cars ', 'calculators ', 'coals ', 'diamonds ', 'flutes ',
+  'hats ', 'kayaks ', 'load-screens ', 'otters ', 'undies ', 'irises ',
+  'cuffs ', 'ropes ', 'tortoises ', 'whips ',
 ];
 
 // :insertfluid:
 export const fluid = [
-  'wator', 'water', 'beer', 'wine', 'mountain dew', 'coffee', 'thee', 'cola',
-  'fanta', 'sprite', 'whiskey', 'moonshine', 'milk', 'chocolate milk', 'blood',
+  'lood', 'woter', 'IPA', 'orange juice', 'mountain dew', 'coffee',
+  'bubble-tea', 'cola', 'fanta', 'sprite', 'whiskey', 'grass water', 'milk',
+  'hot chocolate', 'blood', 'chai tea - masala spiced',
 ];
 
 // :insertsubstance:
 export const substance = [
-  'tin', 'sulfer', 'copper', 'diamond', 'sugar', 'soda', 'daimond', 'jello',
-  'flour', 'honey', 'sand', 'salt',
+  'iron', 'sugar', 'soda', 'jello', 'donuts', 'cookies', 'rasgulla', 'salt',
+  'rasin', 'french fries',
 ];
 // :insertevent:
 export const eventthing = [
-  'twine jam', 'skribbl.io tournament', 'dungeon night at Som his place',
+  'twine jam', 'skribbl.io tournament', 'dungeon night at Somniums place',
   'voice channel party', 'sugarcube livestream',
   'slumber night at :Gwen:s place', 'coding night', 'bulli :Gwen: day',
   'drawing course with berry', 'game night with redsea', 'bloodsuck day',
@@ -131,7 +130,8 @@ export const website = [
 
 // :insertcolor:
 export const colors = [
-  'blue', 'black', 'green',
+  'white', 'gray', 'black', 'red', 'yellow', 'green', 'purple', 'pink',
+  'orange', 'brown', 'beige',
 ];
 
 // :insetBluRhyme:
@@ -141,4 +141,15 @@ export const rhymeBlu = [
   'tattoo', 'bamboo', 'canoe', 'undo', 'sinew', 'fondue', 'kazoo', 'revenue',
   'residue', 'caribou', 'shampoo', 'marabou', 'peekaboo', 'superglue',
   'barbecue', 'kangaroo', 'cockatoo', 'honeydew',
+];
+// :insertIllness:
+export const illness = [
+  'Lethargic Osmosis', 'Irascible digestion', 'Intermittent Lachrymation',
+  'Jägoraphobia', 'Entropic Oculitis', 'Hemline Fracture', 'Petulant Agita',
+];
+
+// twine discord server usual suspects
+export const suspects = [
+  'Cycy', 'Gwen', 'Redsea', 'Lychgate', 'Jay', 'TRBRY', 'Chapel', 'Greyelf',
+  'the Mad Exile', 'Somnium',
 ];
