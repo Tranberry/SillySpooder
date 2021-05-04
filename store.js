@@ -31,7 +31,7 @@ export const QuoteText = [
 
 
   `:Cycy: was walking in the park one day, humming to themselves.
-  The day was bright, the sun was shining, and the :insertanimal:s was singing.
+  The day was bright, the sun was shining, and the :insertanimal:s were singing.
   <br><br> Suddenly, a :insertanimal2: ran by.
   <br><br> Run! Run! the :insertanimal2: cried. :Gwen: is coming!
   And :Gwen: is really angry about the :insertevent:!`,
@@ -81,24 +81,24 @@ export const QuoteText = [
    </ol>`,
 
 
-  `Dear :Cycy:, :insertpluralnoun: are :insertcolor:, :insertpluralnoun2:` +
-  ` are blue, you love me and I love :insertBluRhyme:!<br>your :Gwen:.`,
+  `Dear :Cycy:, :insertpluralnoun: are :insertcolor:, :insertpluralnoun2: 
+  are blue, you love me and I love :insertBluRhyme:!<br>your :Gwen:.`,
 
 
-  `Please excuse :Cycy: who is far too :insertadjective: to attend ` +
-  ` :insertnoun: class.<br> Signed by :Gwen:`,
+  `Please excuse :Cycy: who is far too :insertadjective: to attend 
+  :insertnoun: class.<br> Signed by :Gwen:`,
 
 
-  `:Cycy: is sick with :insertIllness:. Drink more :insertfluid: ` +
-  `and take :insertsubstance: as needed.<br> - Dr.:Gwen:`,
+  `:Cycy: is sick with :insertIllness:. Drink more :insertfluid: 
+  and take :insertsubstance: as needed.<br> - Dr.:Gwen:`,
 
 
-  `:Cycy: is authorized to be at the :insertplace: instead of :insertnoun: ` +
-  ` class.<br> Signed by :Gwen:`,
+  `:Cycy: is authorized to be at the :insertplace: instead of :insertnoun: 
+  class.<br> Signed by :Gwen:`,
 
 
-  `:Gwen: and :Cycy: are too :insertadjective: for :insertnoun: class. ` +
-  `Instead they will be attending the :insertevent:.`,
+  `:Gwen: and :Cycy: are too :insertadjective: for :insertnoun: class.  
+  Instead they will be attending the :insertevent:.`,
 ];
 
 // :insertadjective: + 2,3,4,5
