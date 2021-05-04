@@ -210,7 +210,7 @@ export const number = [
 // :insertwebsite:
 export const website = [
   'www.twinery.org', 'www.twinelab.net', 'www.discord.com',
-  'wwww.motoslave.com', 'www.github.com',
+  'www.motoslave.com', 'www.github.com',
 ];
 
 // :insertcolor:
