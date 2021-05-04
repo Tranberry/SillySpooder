@@ -9,7 +9,8 @@ const Quote = document.querySelector('.Quote');
  * add html markup to bare website
  * @param {array} array website needing html markup
  * @return {array} array with html markup
- * @example <a href="http//www.motoslave.com">www.motoslave.com</a>
+ * @example 'www.motoslave.com' ->
+ * '<a href="http//www.motoslave.com">www.motoslave.com</a>'
  */
 function appendHref(array) {
   const appWebsite = [];
