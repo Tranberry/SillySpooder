@@ -16,9 +16,9 @@ function appendHref(array) {
   for (let index = 0; index < array.length; index++) {
     appWebsite[index] =
       '<a href="http://' +
-      store.website[index] +
+      array[index] +
       '">' +
-      store.website[index] +
+      array[index] +
       '</a>';
   }
   return appWebsite;
