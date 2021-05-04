@@ -142,36 +142,3 @@ export const rhymeBlu = [
   'residue', 'caribou', 'shampoo', 'marabou', 'peekaboo', 'superglue',
   'barbecue', 'kangaroo', 'cockatoo', 'honeydew',
 ];
-
-/**
- * Set highest number + no decimal.
- * @param {number} max - highest number to generate
- * @return {number} - random number less than or equal to <max>
- */
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
-
-/**
- * Builds an array with random numbers in a pattern where the acending number
- * gets subtracted from the total of previous numbers.
- * @param {number} total highets number in array to build pattern from
- * @param {number} count amount of numbers in array
- * @return {number} gives an array o pattern nombahs.
- */
-function splitRandom(total, count) {
-  const breaks = [0, total];
-  for (let i = 0; i < count - 1; i++) {
-    breaks.push(getRandomInt(total));
-  }
-  breaks.sort((a, b) => a - b);
-  console.log(breaks);
-  const values = [];
-  for (let i = 1; i < count + 1; i++) {
-    values.push(breaks[i] - breaks[i-1]);
-  }
-  return values;
-}
-
-
-console.log(splitRandom(20, 6));
