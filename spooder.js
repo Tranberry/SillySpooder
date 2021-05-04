@@ -6,6 +6,24 @@ const randomize = document.querySelector('.randomize');
 const Quote = document.querySelector('.Quote');
 
 /**
+ * add html markup to bare website
+ * @param {array} array website needing html markup
+ * @return {array} array with html markup
+ */
+function appendHref(array) {
+  const appWebsite = [];
+  for (let index = 0; index < array.length; index++) {
+    appWebsite[index] =
+      '<a href="http://' +
+      store.website[index] +
+      '">' +
+      store.website[index] +
+      '</a>';
+  }
+  return appWebsite;
+}
+
+/**
  * Fetch one random item from array
  *
  * @param {array} array any array, ecample; cities like: Tokyo, London, Berlin.
@@ -62,7 +80,8 @@ function result() {
   const bodyItem = randomthingy(store.bodyPart);
   const bodyItem2 = randomthingy(store.bodyPart);
   const placeItem = randomthingy(store.place);
-  const webItem = randomthingy(store.website);
+  const webFull = appendHref(store.website);
+  const webItem = randomthingy(webFull);
   const numberItem = randomthingy(store.number);
   const verbItem = randomthingy(store.verb);
   const verbItem2 = randomthingy(store.verb);
