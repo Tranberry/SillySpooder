@@ -9,7 +9,7 @@ import {
 } from './store.js';
 
 const nameOne = document.getElementById('customname1');
-const customName2 = document.getElementById('customname2');
+const nameTwo = document.getElementById('customname2');
 const randomize = document.querySelector('.randomize');
 const Quote = document.querySelector('.Quote');
 
@@ -136,8 +136,8 @@ function result() {
         .replace(/:Cycy:/g, '<span class="person">' + name1 + '</span>');
   }
 
-  if (customName2.value !== '') {
-    let name = customName2.value;
+  if (nameTwo.value !== '') {
+    let name = nameTwo.value;
     name = name.charAt(0).toUpperCase() + name.slice(1);
     newQuote = newQuote
         .replace(/:Gwen:/g, '<span class="person">' + name + '</span>');
