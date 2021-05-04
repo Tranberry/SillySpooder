@@ -6,7 +6,7 @@ const randomize = document.querySelector('.randomize');
 const Quote = document.querySelector('.Quote');
 
 /**
- * add html markup to bare website
+ * add html markup to bare website from array element
  * @param {array} array website needing html markup
  * @return {array} array with html markup
  * @example 'www.motoslave.com' ->
@@ -27,7 +27,6 @@ function appendHref(array) {
 
 /**
  * Fetch one random item from array
- *
  * @param {array} array any array, ecample; cities like: Tokyo, London, Berlin.
  * @return {array} one item (ex: London) from array
  */
