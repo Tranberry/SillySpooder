@@ -1,12 +1,4 @@
-import {
-  QuoteText, adjective, noun, city, verb, animal, pluralNoun, fluid,
-  substance, eventthing, weekday, theme, veggie, bodyPart, place, number,
-  website,
-  colors,
-  rhymeBlu,
-  illness,
-  suspects,
-} from './store.js';
+import * as store from './store.js';
 
 const nameOne = document.getElementById('customname1');
 const nameTwo = document.getElementById('customname2');
@@ -52,41 +44,41 @@ function fyshuffle(array) {
  * Generates the string/story - super huge function like mega gazillion long.
  */
 function result() {
-  let newQuote = randomthingy(QuoteText);
-  const adjItem = randomthingy(adjective);
-  const adjItem2 = randomthingy(adjective);
-  const adjItem3 = randomthingy(adjective);
-  const adjItem4 = randomthingy(adjective);
-  const adjItem5 = randomthingy(adjective);
-  const adjItem6 = randomthingy(adjective);
-  const nounItem = randomthingy(noun);
-  const nounItem2 = randomthingy(noun);
-  const nounItem3 = randomthingy(noun);
-  const pnounItem = randomthingy(pluralNoun);
-  const pnounItem2 = randomthingy(pluralNoun);
-  const pnounItem3 = randomthingy(pluralNoun);
-  const animalItem = randomthingy(animal);
-  const animalItem2 = randomthingy(animal);
-  const cityItem = randomthingy(city);
-  const bodyItem = randomthingy(bodyPart);
-  const bodyItem2 = randomthingy(bodyPart);
-  const placeItem = randomthingy(place);
-  const webItem = randomthingy(website);
-  const numberItem = randomthingy(number);
-  const verbItem = randomthingy(verb);
-  const verbItem2 = randomthingy(verb);
-  const fluidItem = randomthingy(fluid);
-  const substanceItem = randomthingy(substance);
-  const eventItem = randomthingy(eventthing);
-  const themeItem = randomthingy(theme);
-  const weekdayItem = randomthingy(weekday);
-  const veggieItem = randomthingy(veggie);
+  let newQuote = randomthingy(store.QuoteText);
+  const adjItem = randomthingy(store.adjective);
+  const adjItem2 = randomthingy(store.adjective);
+  const adjItem3 = randomthingy(store.adjective);
+  const adjItem4 = randomthingy(store.adjective);
+  const adjItem5 = randomthingy(store.adjective);
+  const adjItem6 = randomthingy(store.adjective);
+  const nounItem = randomthingy(store.noun);
+  const nounItem2 = randomthingy(store.noun);
+  const nounItem3 = randomthingy(store.noun);
+  const pnounItem = randomthingy(store.pluralNoun);
+  const pnounItem2 = randomthingy(store.pluralNoun);
+  const pnounItem3 = randomthingy(store.pluralNoun);
+  const animalItem = randomthingy(store.animal);
+  const animalItem2 = randomthingy(store.animal);
+  const cityItem = randomthingy(store.city);
+  const bodyItem = randomthingy(store.bodyPart);
+  const bodyItem2 = randomthingy(store.bodyPart);
+  const placeItem = randomthingy(store.place);
+  const webItem = randomthingy(store.website);
+  const numberItem = randomthingy(store.number);
+  const verbItem = randomthingy(store.verb);
+  const verbItem2 = randomthingy(store.verb);
+  const fluidItem = randomthingy(store.fluid);
+  const substanceItem = randomthingy(store.substance);
+  const eventItem = randomthingy(store.eventthing);
+  const themeItem = randomthingy(store.theme);
+  const weekdayItem = randomthingy(store.weekday);
+  const veggieItem = randomthingy(store.veggie);
 
-  const illnessItem = randomthingy(illness);
-  const bluRhyItem = randomthingy(rhymeBlu);
-  const colorItem = randomthingy(colors);
+  const illnessItem = randomthingy(store.illness);
+  const bluRhyItem = randomthingy(store.rhymeBlu);
+  const colorItem = randomthingy(store.colors);
 
-  const getName = fyshuffle(suspects);
+  const getName = fyshuffle(store.suspects);
 
   const name1 = getName[0];
   const name2 = getName[1];
