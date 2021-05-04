@@ -8,7 +8,7 @@ const Quote = document.querySelector('.Quote');
 /**
  * Fetch one random item from array
  *
- * @param {array} array array o cities like: Tokyo, London, Berlin etc
+ * @param {array} array any array, ecample; cities like: Tokyo, London, Berlin.
  * @return {array} one item (ex: London) from array
  */
 function randomthingy(array) {
@@ -20,8 +20,7 @@ function randomthingy(array) {
 * algorithm, which is both unbiased and efficient in terms of time and space.
 * @param {array} array the array to shuffle.
 * @return {array} a reference to array.
-* @example
-* var shuffled = require('fyshuffle')([2, 3, 5, 7, 11]);
+* @example var shuffled = require('fyshuffle')([2, 3, 5, 7, 11]);
 */
 function fyshuffle(array) {
   let remaining = array.length;
