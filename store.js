@@ -182,7 +182,7 @@ export const theme = [
   'watermelon', 'taco', 'fortnite', 'coding', 'slumber', 'twinery',
 ];
 
-// what?
+// :insertvegetable:
 export const veggie = [
   'fake fruit', 'apple', 'pear', 'berry', 'banana', 'watermelon', 'tomato',
   'mushroom', 'orange', 'mango', 'kiwi',
@@ -201,7 +201,7 @@ export const place = [
   'Scary friends home',
 ];
 
-// :insertnumber
+// :insertnumber:
 export const number = [
   'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
   'ten', 'eleven', 'ninety-six', 'four-houndred-twenty',
