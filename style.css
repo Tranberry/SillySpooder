@@ -1,1 +1,69 @@
-/* TBRY */
+/* TRBRY */
+:root {
+  /* colors */
+  --main-cl-darker: #23272a;
+  --main-cl-highcontrast: #d3dadf;
+  --main-cl-interact: #27ae60;
+  --main-cl-lighter: #2c2f33;
+  --main-cl-shade: #00000080;
+  --main-cl-superbright:#ffffff;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  padding:2rem 0 0 0;
+  background-color: var(--main-cl-darker);
+  color: var(--main-cl-superbright);
+}
+body > * {
+  max-width: 40rem;
+  margin: auto;
+}
+button {
+  width: 100%;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  background: var(--main-cl-interact);
+  font-weight: 500;
+  color: var(--main-cl-highcontrast);
+  border: 0 none;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 15px;
+  margin: 10px 0;
+  filter: drop-shadow(0px 2px 4px var(--main-cl-shade));
+}
+button:hover {
+  filter: brightness(1.2) drop-shadow(0px 2px 4px var(--main-cl-shade));
+}
+button:active {
+  filter: brightness(0.9) drop-shadow(0px 0px 4px var(--main-cl-shade));
+}
+input {
+  padding: 15px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  border: 0 none;
+  border-radius: 2px;
+  background-color: var(--main-cl-highcontrast);
+  color: #000;
+}
+label {
+  visibility: hidden;
+  line-height: .1;
+}
+.Quote {
+  box-sizing: border-box;
+  padding: 1em 1.6rem;
+  background-color: var(--main-cl-darker);
+  font-size: 1.3em;
+  line-height: 1.3;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 2ch auto 0 auto;
+  filter: drop-shadow(0px 0px 10px var(--main-cl-shade)) drop-shadow(0px 9px 19px var(--main-cl-lighter));
+  border: 5px solid var(--main-cl-lighter);
+}
