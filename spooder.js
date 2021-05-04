@@ -14,13 +14,38 @@ const randomize = document.querySelector('.randomize');
 const Quote = document.querySelector('.Quote');
 
 /**
- * Fetch random array index
+ * Fetch one random item from array
  *
- * @param {array} array - values like city, noun etc..
- * @return {array} - random [i] from array
+ * @param {array} array array o cities like: Tokyo, London, Berlin etc
+ * @return {array} one item (ex: London) from array
  */
 function randomthingy(array) {
   return array[Math.floor(Math.random() * array.length)];
+}
+
+/**
+* Shuffles an array in place. This shuffle is performed using the Fisher-Yates
+* algorithm, which is both unbiased and efficient in terms of time and space.
+* @param {array} array the array to shuffle.
+* @return {array} a reference to array.
+* @example
+* var shuffled = require('fyshuffle')([2, 3, 5, 7, 11]);
+*/
+function fyshuffle(array) {
+  let remaining = array.length;
+
+  while (remaining > 0) {
+    const pos = Math.floor(Math.random() * remaining);
+    const tmp = array[pos];
+    const end = remaining - 1;
+
+    array[pos] = array[end];
+    array[end] = tmp;
+
+    --remaining;
+  }
+
+  return array;
 }
 
 /**
@@ -61,8 +86,10 @@ function result() {
   const bluRhyItem = randomthingy(rhymeBlu);
   const colorItem = randomthingy(colors);
 
-  const name1 = randomthingy(suspects);
-  const name2 = randomthingy(suspects);
+  const getName = fyshuffle(suspects);
+
+  const name1 = getName[0];
+  const name2 = getName[1];
 
   newQuote = newQuote
       .replace(/:insertadjective:/g, adjItem)
