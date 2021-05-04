@@ -12,22 +12,22 @@ export const QuoteText = [
   ':Cycy: is authorized to be at the :insertplace: instead of :insertnoun: ' +
     ' class.<br> Signed by :Gwen:',
 
-  ':Cycy: is too cool for :insertnoun: class. Instead they will be ' +
-    ' attending the :insertevent:.',
+  ':Gwen: and :Cycy: are too :insertadjective: for :insertnoun: class. ' +
+  'Instead they will be attending the :insertevent:.',
 ];
 
 // :insertadjective: + 2,3,4,5
 export const adjective = [
-  'caring', 'eager', 'flagrant', 'friendly', 'glossy', 'helpless', 'ill',
+  'caring', 'eager', 'tired', 'friendly', 'glossy', 'helpless', 'ill',
   'irate', 'lavish', 'quirky', 'rhetorical', 'scandalous', 'sincere',
-  'spotless',
+  'spotless', 'clever', 'cool',
 ];
 
 // :insertnoun: + 2,3
 export const noun = [
-  'accelerator', 'badger', 'bracket', 'character', 'country', 'disadvantage',
-  'fahrenheit', 'german', 'horn', 'knot', 'mayonnaise', 'octopus', 'pike',
-  'rail', 'scissors', 'sound', 'sycamore', 'turkey', 'work',
+  'array', 'badger', 'bracket', 'Harlowe', 'Sugarcube', 'disadvantage',
+  'Twine', 'interface', 'knitting', 'hoarding', 'mayonnaise', 'octopus', 'pike',
+  'rail', 'scissors', 'cake', 'gaming', 'turkey', 'work',
 ];
 
 // :insertcity:
@@ -113,7 +113,7 @@ export const bodyPart = [
 export const place = [
   'Twine Server', 'discord', 'coffee shop', 'submarine', 'Somniums Inn',
   'Sugarcube Clubhouse', 'The Lost Harlowe', 'Snowman peak', 'Chapbook Lake',
-  'Scary frinds home',
+  'Scary friends home',
 ];
 
 // :insertnumber
