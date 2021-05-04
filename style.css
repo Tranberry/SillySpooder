@@ -14,6 +14,10 @@ body {
   padding:2rem 0 0 0;
   background-color: var(--main-cl-darker);
   color: var(--main-cl-superbright);
+  min-width: 100vw;
+min-height: 100vh;
+margin: 0;
+padding: 0;
 }
 body > * {
   max-width: 40rem;
