@@ -58,6 +58,14 @@ label {
   visibility: hidden;
   line-height: .1;
 }
+a {
+	color: var(--main-cl-highcontrast);
+	font-weight: 600;
+	text-decoration: none;
+}
+a:hover {
+  color: var(--main-cl-interact);
+}
 .Quote {
   box-sizing: border-box;
   padding: 1em 1.6rem;
