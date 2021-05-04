@@ -236,5 +236,5 @@ export const illness = [
 // twine discord server usual suspects
 export const suspects = [
   'Cycy', 'Gwen', 'Redsea', 'Lychgate', 'Jay', 'TRBRY', 'Chapel', 'Greyelf',
-  'TME', 'Somnium',
+  'TME', 'Somnium', 'Haley Scribe',
 ];
