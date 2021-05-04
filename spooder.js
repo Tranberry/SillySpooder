@@ -128,19 +128,23 @@ function result() {
   if (nameOne.value !== '') {
     let name = nameOne.value;
     name = name.charAt(0).toUpperCase() + name.slice(1);
-    newQuote = newQuote.replace(/:Cycy:/g, name);
+    newQuote = newQuote
+        .replace(/:Cycy:/g, '<span class="person">' + name + '</span>');
     // lege var beter maken
   } else {
-    newQuote = newQuote.replace(/:Cycy:/g, name1);
+    newQuote = newQuote
+        .replace(/:Cycy:/g, '<span class="person">' + name1 + '</span>');
   }
 
   if (customName2.value !== '') {
     let name = customName2.value;
     name = name.charAt(0).toUpperCase() + name.slice(1);
-    newQuote = newQuote.replace(/:Gwen:/g, name);
+    newQuote = newQuote
+        .replace(/:Gwen:/g, '<span class="person">' + name + '</span>');
     // lege var beter maken
   } else {
-    newQuote = newQuote.replace(/:Gwen:/g, name2);
+    newQuote = newQuote
+        .replace(/:Gwen:/g, '<span class="person">' + name2 + '</span>');
   }
 
   // drukt nieuwe content naarbuiten

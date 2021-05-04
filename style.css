@@ -67,3 +67,7 @@ label {
   filter: drop-shadow(0px 0px 10px var(--main-cl-shade)) drop-shadow(0px 9px 19px var(--main-cl-lighter));
   border: 5px solid var(--main-cl-lighter);
 }
+.person {
+    color: var(--main-cl-interact);
+    font-weight: 900;
+}
