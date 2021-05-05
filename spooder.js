@@ -12,17 +12,17 @@ const Quote = document.querySelector('.Quote');
  * @example 'www.motoslave.com' ->
  * '<a href="http//www.motoslave.com">www.motoslave.com</a>'
  */
-function appendHref(array) {
-  const appWebsite = [];
+function addMarkup(array) {
+  const markupSite = [];
   for (let index = 0; index < array.length; index++) {
-    appWebsite[index] =
-      '<a href="http://' +
+    markupSite[index] =
+      '<a href="https://' +
       array[index] +
       '">' +
       array[index] +
       '</a>';
   }
-  return appWebsite;
+  return markupSite;
 }
 
 /**
@@ -54,7 +54,6 @@ function fyshuffle(array) {
 
     --remaining;
   }
-
   return array;
 }
 
@@ -63,39 +62,10 @@ function fyshuffle(array) {
  */
 function result() {
   let newQuote = randomthingy(store.QuoteText);
-  const adjItem = randomthingy(store.adjective);
-  const adjItem2 = randomthingy(store.adjective);
-  const adjItem3 = randomthingy(store.adjective);
-  const adjItem4 = randomthingy(store.adjective);
-  const adjItem5 = randomthingy(store.adjective);
-  const adjItem6 = randomthingy(store.adjective);
-  const nounItem = randomthingy(store.noun);
-  const nounItem2 = randomthingy(store.noun);
-  const nounItem3 = randomthingy(store.noun);
-  const pnounItem = randomthingy(store.pluralNoun);
-  const pnounItem2 = randomthingy(store.pluralNoun);
-  const pnounItem3 = randomthingy(store.pluralNoun);
-  const animalItem = randomthingy(store.animal);
-  const animalItem2 = randomthingy(store.animal);
-  const cityItem = randomthingy(store.city);
-  const bodyItem = randomthingy(store.bodyPart);
-  const bodyItem2 = randomthingy(store.bodyPart);
-  const placeItem = randomthingy(store.place);
-  const webFull = appendHref(store.website);
-  const webItem = randomthingy(webFull);
-  const numberItem = randomthingy(store.number);
-  const verbItem = randomthingy(store.verb);
-  const verbItem2 = randomthingy(store.verb);
-  const fluidItem = randomthingy(store.fluid);
-  const substanceItem = randomthingy(store.substance);
-  const eventItem = randomthingy(store.eventthing);
-  const themeItem = randomthingy(store.theme);
-  const weekdayItem = randomthingy(store.weekday);
-  const veggieItem = randomthingy(store.veggie);
 
-  const illnessItem = randomthingy(store.illness);
-  const bluRhyItem = randomthingy(store.rhymeBlu);
-  const colorItem = randomthingy(store.colors);
+  // TODO: add markup AFTER replace
+  const webFull = addMarkup(store.website);
+  const webItem = randomthingy(webFull);
 
   const getName = fyshuffle(store.suspects);
 
@@ -103,64 +73,98 @@ function result() {
   const name2 = getName[1];
 
   newQuote = newQuote
-      .replace(/:insertadjective:/g, adjItem)
-      .replace(/:insertadjective2:/g, adjItem2)
-      .replace(/:insertadjective3:/g, adjItem3)
-      .replace(/:insertadjective4:/g, adjItem4)
-      .replace(/:insertadjective5:/g, adjItem5)
-      .replace(/:insertnoun:/g, nounItem)
-      .replace(/:insertnoun2:/g, nounItem2)
-      .replace(/:insertpluralnoun:/g, pnounItem)
-      .replace(/:insertpluralnoun2:/g, pnounItem2)
-      .replace(/:insertpluralnoun3:/g, pnounItem3)
-      .replace(/:insertanimal:/g, animalItem)
-      .replace(/:insertcity:/g, cityItem)
-      .replace(/:insertbodypart:/g, bodyItem)
-      .replace(/:insertbodypart2:/g, bodyItem2)
-      .replace(/:insertplace:/g, placeItem)
-      .replace(/:insertwebsite:/g, webItem)
-      .replace(/:insertnumber:/g, numberItem)
-      .replace(/:insertverb:/g, verbItem)
-      .replace(/:insertadjective6:/g, adjItem6)
-      .replace(/:insertfluid:/g, fluidItem)
-      .replace(/:insertsubstance:/g, substanceItem)
-      .replace(/:insertevent:/g, eventItem)
-      .replace(/:insertanimal2:/g, animalItem2)
-      .replace(/:inserttheme:/g, themeItem)
-      .replace(/:insertweekday:/g, weekdayItem)
-      .replace(/:insertnoun3:/g, nounItem3)
-      .replace(/:insertverb2:/g, verbItem2)
-      .replace(/:insertvegetable:/g, veggieItem)
-      .replace(/:insertBluRhyme:/g, bluRhyItem)
-      .replace(/:insertIllness:/g, illnessItem)
-      .replace(/:insertcolor:/g, colorItem);
+      .replace(/:insertadjective:/g, randomthingy(store.adjective))
+      .replace(/:insertadjective2:/g, randomthingy(store.adjective))
+      .replace(/:insertadjective3:/g, randomthingy(store.adjective))
+      .replace(/:insertadjective4:/g, randomthingy(store.adjective))
+      .replace(/:insertadjective5:/g, randomthingy(store.adjective))
+      .replace(/:insertadjective6:/g, randomthingy(store.adjective))
+
+      .replace(/:insertanimal:/g, randomthingy(store.animal))
+      .replace(/:insertanimal2:/g, randomthingy(store.animal))
+
+      .replace(/:insertBluRhyme:/g, randomthingy(store.rhymeBlu))
+
+      .replace(/:insertbodypart:/g, randomthingy(store.bodyPart))
+      .replace(/:insertbodypart2:/g, randomthingy(store.bodyPart))
+
+      .replace(/:insertcity:/g, randomthingy(store.city))
+
+      .replace(/:insertcolor:/g, randomthingy(store.colors))
+
+      .replace(/:insertevent:/g, randomthingy(store.eventthing))
+
+      .replace(/:insertfluid:/g, randomthingy(store.fluid))
+
+      .replace(/:insertIllness:/g, randomthingy(store.illness))
+
+      .replace(/:insertnoun:/g, randomthingy(store.noun))
+      .replace(/:insertnoun2:/g, randomthingy(store.noun))
+      .replace(/:insertnoun3:/g, randomthingy(store.noun))
+
+      .replace(/:insertnumber:/g, randomthingy(store.number))
+
+      .replace(/:insertplace:/g, randomthingy(store.place))
+
+      .replace(/:insertpluralnoun:/g, randomthingy(store.pluralNoun))
+      .replace(/:insertpluralnoun2:/g, randomthingy(store.pluralNoun))
+      .replace(/:insertpluralnoun3:/g, randomthingy(store.pluralNoun))
+
+      .replace(/:insertsubstance:/g, randomthingy(store.substance))
+
+      .replace(/:inserttheme:/g, randomthingy(store.theme))
+
+      .replace(/:insertvegetable:/g, randomthingy(store.veggie))
+      .replace(/:insertvegetable2:/g, randomthingy(store.veggie))
+
+
+      .replace(/:insertverb:/g, randomthingy(store.verb))
+      .replace(/:insertverb2:/g, randomthingy(store.verb))
+
+      .replace(/:insertwebsite:/g, webItem) // FIXME: speschl
+
+      .replace(/:insertweekday:/g, randomthingy(store.weekday));
+
+  /**
+ * adds html-span with class of .person and .name
+ * @param {string} name person name
+ * @return {string} wrapped with spane and added Class
+ * @example addSpanClass('Cycy') === '<span class="person Cycy">Cycy</span>'
+ */
+  function addSpanClass(name) {
+    const prefix = '<span class="person '+name+'">';
+    const postfix = '</span>';
+    return prefix + name + postfix;
+  }
 
   // check if name 1 is present and regex it away otherwise not
   if (nameOne.value !== '') {
     let name = nameOne.value;
     name = name.charAt(0).toUpperCase() + name.slice(1);
     newQuote = newQuote
-        .replace(/:Cycy:/g, '<span class="person">' + name + '</span>');
+        .replace(/:Cycy:/g, addSpanClass(name));
     // lege var beter maken
   } else {
     newQuote = newQuote
-        .replace(/:Cycy:/g, '<span class="person">' + name1 + '</span>');
+        .replace(/:Cycy:/g, addSpanClass(name1));
   }
 
+  // check if name 2 is present and regex it away otherwise not
   if (nameTwo.value !== '') {
     let name = nameTwo.value;
     name = name.charAt(0).toUpperCase() + name.slice(1);
     newQuote = newQuote
-        .replace(/:Gwen:/g, '<span class="person">' + name + '</span>');
+        .replace(/:Gwen:/g, addSpanClass(name));
     // lege var beter maken
   } else {
     newQuote = newQuote
-        .replace(/:Gwen:/g, '<span class="person">' + name2 + '</span>');
+        .replace(/:Gwen:/g, addSpanClass(name2));
   }
 
   // drukt nieuwe content naarbuiten
+  /** replace Qoute with newQoute, writing this to understand Sjoerd */
   Quote.innerHTML = newQuote;
-  Quote.style.visibility = 'visible';
+  // Quote.style.visibility = 'visible';
 }
 // pakt de random knop
 randomize.addEventListener('click', result);

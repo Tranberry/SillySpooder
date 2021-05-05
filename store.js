@@ -4,20 +4,15 @@ export const QuoteText = [
   `There are many :insertadjective: ways to choose what to read. <br>
   First, you should ask for recommendations perhaps from :Cycy: and
   :insertpluralnoun:. <br><br>
-
   Whatever you do, don't ask :Gwen: whom only reads :insertadjective2: books
   with :insertanimal:s on the cover!<br><br>
-
   If your friends and family are no help, try checking out the
   :insertnoun2: Review in <em>The :insertcity: Times</em>.<br><br>
-
   If the :insertpluralnoun2: featured there are too :insertadjective3: for your
   taste, try something a little more low-:insertbodypart:, like :Cycy: would do.
-
   You could also choose the :insertadjective4:-fashioned way. Head to
   your local library or :insertplace: and browse the shelves until something
   catches your :insertbodypart2:.<br><br>
-
   Or, you could save yourself a whole lot of
   :insertadjective5: trouble and log on :insertwebsite:, the :insertadjective6:
   new website to :insertverb: for books! With all the time you will save not
@@ -25,7 +20,7 @@ export const QuoteText = [
   more books!`,
 
 
-  `After hiding the :insertnoun: in :Cycy:s :insertbodypart:
+  `After hiding the :insertnoun: in :Cycy:\'s :insertbodypart:
   for :insertnumber: years, :Gwen: grew :insertadjective: and tried to
   sell it to a/an :insertanimal: in :insertcity:, but was caught.`,
 
@@ -55,7 +50,6 @@ export const QuoteText = [
 
   `A :insertadjective: fairy princess movie is coming out soon!
   It will feature Snow-:Cycy: and the :insertnumber: dwarfs.<br><br>
-
   Synopsis:<br>
   Snow-:Cycy: is a princess whose beauty challanges the evil queen. Hence
   :Cycy: is forced to flee from :insertcity:-castle and hides in the
@@ -82,7 +76,7 @@ export const QuoteText = [
 
 
   `Dear :Cycy:, :insertpluralnoun: are :insertcolor:, :insertpluralnoun2: 
-  are blue, you love me and I love :insertBluRhyme:!<br>your :Gwen:.`,
+  are blue, you love me and I love :insertBluRhyme:!<br>yours :Gwen:.`,
 
 
   `Please excuse :Cycy: who is far too :insertadjective: to attend 
@@ -90,7 +84,7 @@ export const QuoteText = [
 
 
   `:Cycy: is sick with :insertIllness:. Drink more :insertfluid: 
-  and take :insertsubstance: as needed.<br> - Dr.:Gwen:`,
+  and take :insertsubstance: as needed.<br> - Dr. :Gwen:`,
 
 
   `:Cycy: is authorized to be at the :insertplace: instead of :insertnoun: 
@@ -99,13 +93,35 @@ export const QuoteText = [
 
   `:Gwen: and :Cycy: are too :insertadjective: for :insertnoun: class.  
   Instead they will be attending the :insertevent:.`,
+
+  `Make sure :Cycy:\'s lunchbox is filled with nutritious
+  :insertadjective: food.
+  Do not go to the :insertadjective2: food stand across the street from the
+  school owed by :Gwen:.
+  The hamburgers they serve are fried in :insertnoun: and are made
+  of :insertanimal: meat.
+  So take a sandwich made of :insertvegetable: or :insertvegetable2: it\'s much
+  healthier for :Cycy:! Drink :insertcolor: milk instead of :insertadjective3:
+  colas.`,
+
+  `:Cycy: is the :insertadjective: teacher in the world. They are
+  :insertadjective2: and :insertadjective3:. :Cycy: makes learning
+  :insertadjective4:. School is :insertadjective5:, because of them!<br>
+  Sincerely,<br>:Gwen: `,
+
+  `Yesterday, the :insertanimal: ate :Cycy:\'s favorite :insertnoun:, :Cycy: was
+  really sad, but :insertadjective: :Gwen: gave :Cycy: a :insertfluid: to make
+  them :insertadjective2: again.
+  :Gwen: did laugh at :Cycy: as it happened and :Cycy: excluded :Gwen: from
+  the :insertevent: for this reason.`,
 ];
 
 // :insertadjective: + 2,3,4,5
 export const adjective = [
   'caring', 'eager', 'tired', 'friendly', 'glossy', 'helpless', 'ill',
   'irate', 'lavish', 'quirky', 'rhetorical', 'scandalous', 'sincere',
-  'spotless', 'clever', 'cool',
+  'spotless', 'clever', 'cool', 'gloomy', 'enormous', 'huge', 'scary',
+  'bonking', 'running', 'stupid', 'loving',
 ];
 
 // :insertnoun: + 2,3
@@ -121,7 +137,8 @@ export const city = [
   'Elk Grove', 'Aarhus', 'GreenBay', 'Glasgow', 'Solingen',
   'Lakeland', 'Valencia', 'Miami', 'Naples', 'Marseille', 'Orlando',
   'Pomona', 'Reading', 'Saint Petersburg', 'Milano', 'Springdale',
-  'Miskolc', 'Waco', 'Rotterdam',
+  'Miskolc', 'Waco', 'Rotterdam', 'Amsterdam', 'Scheveningen', 'Den Haag',
+  'Oude Schild', 'Tokyo', 'Groningen',
 ];
 
 // :insertverb:
@@ -143,7 +160,7 @@ export const animal = [
 // :insertpluralnoun: + 2,3
 export const pluralNoun = [
   'gold ', 'cars ', 'calculators ', 'eggplants ', 'diamonds ', 'flutes ',
-  'hats ', 'kayaks ', 'carrots ', 'otters ', 'undies ', 'food ',
+  'hats ', 'kayaks ', 'carrots ', 'otters ', 'spiderman undies ', 'food ',
   'cuffs ', 'ropes ', 'tortoises ', 'whips ',
 ];
 
@@ -161,9 +178,9 @@ export const substance = [
 ];
 // :insertevent:
 export const eventthing = [
-  'twine jam', 'skribbl.io tournament', 'dungeon night at Somniums place',
+  'twine jam', 'skribbl.io tournament', 'dungeon night at Somnium\'s place',
   'voice channel party', 'sugarcube livestream',
-  'slumber night at :Gwen:s place', 'coding night', 'bulli :Gwen: day',
+  'slumber night at :Gwen:\'s place', 'coding night', 'bulli :Gwen: day',
   'drawing course with berry', 'game night with redsea', 'bloodsuck day',
   'nosleep vamp party',
 ];
@@ -182,23 +199,24 @@ export const theme = [
   'watermelon', 'taco', 'fortnite', 'coding', 'slumber', 'twinery',
 ];
 
-// :insertvegetable:
+// :insertvegetable: + 2
 export const veggie = [
   'fake fruit', 'apple', 'pear', 'berry', 'banana', 'watermelon', 'tomato',
-  'mushroom', 'orange', 'mango', 'kiwi',
+  'mushroom', 'orange', 'mango', 'kiwi', 'pineapple', 'lychee', 'cocoa bean',
 ];
 
 // :insertbodypart: + 2
 export const bodyPart = [
   'eye', 'leg', 'chest', 'finger', 'belly', 'back', 'stomach', 'foot', 'nose',
   'chin', 'hair', 'neck', 'knee', 'heel', 'cheek', 'tongue', 'lung', 'buttock',
+  'tummy', 'tail', 'claws',
 ];
 
 // :insertplace:
 export const place = [
-  'Twine Server', 'discord', 'coffee shop', 'submarine', 'Somniums Inn',
+  'Twine Server', 'discord', 'coffee shop', 'submarine', 'Somnium\'s Inn',
   'Sugarcube Clubhouse', 'The Lost Harlowe', 'Snowman peak', 'Chapbook Lake',
-  'Scary friends home',
+  'Scary friends home', 'Klem\'s grotto', 'Cycy\'s cavern\'s',
 ];
 
 // :insertnumber:
@@ -210,13 +228,14 @@ export const number = [
 // :insertwebsite:
 export const website = [
   'www.twinery.org', 'www.twinelab.net', 'www.discord.com',
-  'www.motoslave.com', 'www.github.com',
+  'www.motoslave.com', 'www.github.com', 'www.writtenhorror.com',
+  'www.secretcycysite.com', 'www.gwensspiderstore.com',
 ];
 
 // :insertcolor:
 export const colors = [
   'white', 'gray', 'black', 'red', 'yellow', 'green', 'purple', 'pink',
-  'orange', 'brown', 'beige',
+  'orange', 'brown', 'beige', 'neon gray', 'grass green', 'violet',
 ];
 
 // :insetBluRhyme:
@@ -231,10 +250,14 @@ export const rhymeBlu = [
 export const illness = [
   'Lethargic Osmosis', 'Irascible digestion', 'Intermittent Lachrymation',
   'Jägoraphobia', 'Entropic Oculitis', 'Hemline Fracture', 'Petulant Agita',
+  'Tummy ouch', 'Dragon\'s disease', 'Head ouch', 'Laughing Death',
+  'Alice in Wonderland syndrome', 'Water allergy', 'Mad cow disease',
+  'Werewolf Syndrome', 'Facial Blindness', 'Sleeping Beauty Syndrome',
+  'Alien Hand Syndrome', 'Stone Man\'s Disease', 'Amon\'s Gus disease',
 ];
 
 // twine discord server usual suspects
 export const suspects = [
   'Cycy', 'Gwen', 'Redsea', 'Lychgate', 'Jay', 'TRBRY', 'Chapel', 'Greyelf',
-  'TME', 'Somnium', 'Haley Scribe',
+  'TME', 'Somnium', 'Haley Scribe', 'Ghost', 'Lavorther',
 ];
