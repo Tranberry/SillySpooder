@@ -52,7 +52,7 @@ export const QuoteText = [
   It will feature Snow-:Cycy: and the :insertnumber: dwarfs.<br><br>
   Synopsis:<br>
   Snow-:Cycy: is a princess whose beauty challanges the evil queen. Hence
-  :Cycy: is forced to flee from :insertcity:-castle and hides in the
+  :Cycy: is forced to flee from :insertcity:-castle, and hides in the
   :insertplace:. There, she discovers the dwarfs playing with their
   :insertpluralnoun:.<br>
   But the vengeful queens search is not in vain she can casts a
@@ -133,10 +133,9 @@ export const noun = [
 
 // :insertcity:
 export const city = [
-  'Aberdeen', 'Prune', 'Berlin', 'Burlington', 'Malmö', 'Danbury',
-  'Elk Grove', 'Aarhus', 'GreenBay', 'Glasgow', 'Solingen',
-  'Lakeland', 'Valencia', 'Miami', 'Naples', 'Marseille', 'Orlando',
-  'Pomona', 'Reading', 'Saint Petersburg', 'Milano', 'Springdale',
+  'Aberdeen', 'Prune', 'Berlin', 'Malmö', 'Elk Grove', 'Aarhus', 'GreenBay',
+  'Glasgow', 'Solingen', 'Lakeland', 'Valencia', 'Miami', 'Naples', 'Marseille',
+  'Orlando', 'Pomona', 'Reading', 'Saint Petersburg', 'Milano', 'Springdale',
   'Miskolc', 'Waco', 'Rotterdam', 'Amsterdam', 'Scheveningen', 'Den Haag',
   'Oude Schild', 'Tokyo', 'Groningen',
 ];
@@ -180,9 +179,9 @@ export const substance = [
 export const eventthing = [
   'twine jam', 'skribbl.io tournament', 'dungeon night at Somnium\'s place',
   'voice channel party', 'sugarcube livestream',
-  'slumber night at :Gwen:\'s place', 'coding night', 'bulli :Gwen: day',
-  'drawing course with berry', 'game night with redsea', 'bloodsuck day',
-  'nosleep vamp party',
+  'slumber night at :Gwen:\'s', 'coding night', 'bulli :Gwen: day',
+  'bulli :Cycy: day', 'drawing course with berry', 'game night with redsea',
+  'bloodsuck day', 'nosleep vamp party',
 ];
 
 // :insertweekday:
@@ -212,11 +211,11 @@ export const bodyPart = [
   'tummy', 'tail', 'claws',
 ];
 
-// :insertplace:
+// :insertplace: - imagine a the infront o these
 export const place = [
-  'Twine Server', 'discord', 'coffee shop', 'submarine', 'Somnium\'s Inn',
-  'Sugarcube Clubhouse', 'The Lost Harlowe', 'Snowman peak', 'Chapbook Lake',
-  'Scary friends home', 'Klem\'s grotto', 'Cycy\'s cavern\'s',
+  'Twine Server', 'discord-server', 'coffee shop', 'submarine',
+  'Somnium Inn', 'Sugarcube Clubhouse', 'Lost Harlowe', 'Snowman peak',
+  'Chapbook Lake', 'Scary friends home', 'grotto of Klem', 'cave of dragin',
 ];
 
 // :insertnumber:
