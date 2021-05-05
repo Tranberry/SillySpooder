@@ -17,22 +17,22 @@ function addMarkupString(string) {
 };
 
 /**
- * Fetch one random item from array
- * @param {array} array any array, ecample; cities like: Tokyo, London, Berlin.
- * @return {array} one item (ex: London) from array
+ * Fetch one random element from an array
+ * @param {array} array any primitive array; cities like: Tokyo, London, Berlin.
+ * @return {string} one item (ex: London) from array
  */
 function randomthingy(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
 
 /**
-* Shuffles an array in place. This shuffle is performed using the Fisher-Yates
-* algorithm, which is both unbiased and efficient in terms of time and space.
+* Shuffles an array in place. This using the Fisher-Yates algorithm,
+* which is both unbiased and efficient in terms of time and space.
 * @param {array} array the array to shuffle.
 * @return {array} a reference to array.
 * @example var shuffled = require('fyshuffle')([2, 3, 5, 7, 11]);
 */
-function fyshuffle(array) {
+function shuffle(array) {
   let remaining = array.length;
 
   while (remaining > 0) {
@@ -55,7 +55,7 @@ function result() {
   let newQuote = randomthingy(store.QuoteText);
   // let newQuote = (store.QuoteText[store.QuoteText.length-1]);
 
-  const getName = fyshuffle(store.suspects);
+  const getName = shuffle(store.suspects);
 
   const name1 = getName[0];
   const name2 = getName[1];
@@ -114,7 +114,7 @@ function result() {
       .replace(/:insertweekday:/g, randomthingy(store.weekday));
 
   /**
- * adds html-span with class of .person and .name
+ * Wraps string with html class of .person + .name
  * @param {string} name person name
  * @return {string} wrapped with spane and added Class
  * @example addSpanClass('Cycy') === '<span class="person Cycy">Cycy</span>'
