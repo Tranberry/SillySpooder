@@ -22,7 +22,7 @@ export const QuoteText = [
 
   `After hiding the :insertnoun: in :Cycy:\'s :insertbodypart:
   for :insertnumber: years, :Gwen: grew :insertadjective: and tried to
-  sell it to a/an :insertanimal: in :insertcity:, but was caught.`,
+  sell it to the :insertanimal: in :insertcity:, but was caught.`,
 
 
   `:Cycy: was walking in the park one day, humming to themselves.
@@ -104,10 +104,10 @@ export const QuoteText = [
   healthier for :Cycy:! Drink :insertcolor: milk instead of :insertadjective3:
   colas.`,
 
-  `:Cycy: is the :insertadjective: teacher in the world. They are
+  `:Cycy: is a :insertadjective: teacher. They are
   :insertadjective2: and :insertadjective3:. :Cycy: makes learning
   :insertadjective4:. School is :insertadjective5:, because of them!<br>
-  Sincerely,<br>:Gwen: `,
+  Sincerely, pupil :Gwen:`,
 
   `Yesterday, the :insertanimal: ate :Cycy:\'s favorite :insertnoun:, :Cycy: was
   really sad, but :insertadjective: :Gwen: gave :Cycy: a :insertfluid: to make
@@ -154,11 +154,11 @@ export const verb = [
 
 // :insertanimal: + 2
 export const animal = [
-  'Aardvark', 'Armadillo', 'Bee', 'Cassowary', 'Chinchilla', 'Crab',
-  'Dogfish', 'Eagle', 'Ferret', 'Gazelle', 'Goose', 'Hare', 'Human',
-  'Jellyfish', 'Lark', 'Louse', 'Meerkat', 'Mule', 'Ostrich', 'Pelican',
-  'Quail', 'Raven', 'Sand Dollar', 'Shrew', 'Squirrel', 'Tarsier', 'Vulture',
-  'Wolverine',
+  'aardvark', 'armadillo', 'bee', 'cassowary', 'chinchilla', 'crab',
+  'dogfish', 'eagle', 'ferret', 'gazelle', 'goose', 'hare', 'human',
+  'jellyfish', 'lark', 'louse', 'meerkat', 'mule', 'ostrich', 'pelican',
+  'quail', 'raven', 'sand dollar', 'shrew', 'squirrel', 'tarsier', 'vulture',
+  'wolverine',
 ];
 
 // :insertpluralnoun: + 2,3
@@ -172,7 +172,7 @@ export const pluralNoun = [
 export const fluid = [
   'lood', 'woter', 'IPA', 'orange juice', 'mountain dew', 'coffee',
   'bubble-tea', 'cola', 'fanta', 'sprite', 'whiskey', 'grass water', 'milk',
-  'hot chocolate', 'blood', 'chai tea - masala spiced',
+  'hot chocolate', 'blood', 'chai tea (masala spiced)',
 ];
 
 // :insertsubstance:
@@ -244,7 +244,7 @@ export const colors = [
 
 // :insetBluRhyme:
 export const rhymeBlu = [
-  'you', 'Drew', 'brew', 'EU', 'loo', 'roux', 'to', 'who', 'few', 'dew', 'glue',
+  'you', 'Drew', 'brew', 'to', 'who', 'few', 'dew', 'glue',
   'flu', 'zoo', 'boo', 'goo', 'mew', 'pooh', 'poo', 'gnu', 'anew', 'taboo',
   'tattoo', 'bamboo', 'canoe', 'undo', 'sinew', 'fondue', 'kazoo', 'revenue',
   'residue', 'caribou', 'shampoo', 'marabou', 'peekaboo', 'superglue',
@@ -254,10 +254,10 @@ export const rhymeBlu = [
 export const illness = [
   'Lethargic Osmosis', 'Irascible digestion', 'Intermittent Lachrymation',
   'Jägoraphobia', 'Entropic Oculitis', 'Hemline Fracture', 'Petulant Agita',
-  'Tummy ouch', 'Dragon\'s disease', 'Head ouch', 'Laughing Death',
-  'Alice in Wonderland syndrome', 'Water allergy', 'Mad cow disease',
-  'Werewolf Syndrome', 'Facial Blindness', 'Sleeping Beauty Syndrome',
-  'Alien Hand Syndrome', 'Stone Man\'s Disease', 'Amon\'s Gus disease',
+  'tummy ouch', 'dragon\'s disease', 'head ouch', 'laughing death',
+  'Alice in wonderland syndrome', 'water allergy', 'mad cow disease',
+  'werewolf syndrome', 'facial blindness', 'sleeping beauty syndrome',
+  'alien hand syndrome', 'stone man\'s disease', 'Amon\'s Gus disease',
 ];
 
 // twine discord server usual suspects
