@@ -53,7 +53,7 @@ function fyshuffle(array) {
  */
 function result() {
   let newQuote = randomthingy(store.QuoteText);
-  // let newQuote = (store.QuoteText[0]);
+  // let newQuote = (store.QuoteText[store.QuoteText.length-1]);
 
   const getName = fyshuffle(store.suspects);
 

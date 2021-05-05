@@ -114,6 +114,11 @@ export const QuoteText = [
   them :insertadjective2: again.
   :Gwen: did laugh at :Cycy: as it happened and :Cycy: excluded :Gwen: from
   the :insertevent: for this reason.`,
+
+  `<em>"Wake :Cycy: up when this is over <br>
+  :Gwen: is :insertadjective: living life like a :insertanimal: <br>
+  Please wake :Cycy: up when it's all over <br>
+  :Gwen: is :insertadjective2: living right here in between"</em>`,
 ];
 
 // :insertadjective: + 2,3,4,5
@@ -121,7 +126,7 @@ export const adjective = [
   'caring', 'eager', 'tired', 'friendly', 'glossy', 'helpless', 'ill',
   'irate', 'lavish', 'quirky', 'rhetorical', 'scandalous', 'sincere',
   'spotless', 'clever', 'cool', 'gloomy', 'enormous', 'huge', 'scary',
-  'bonking', 'running', 'stupid', 'loving',
+  'bonking', 'running', 'silly', 'loving',
 ];
 
 // :insertnoun: + 2,3
