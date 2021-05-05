@@ -6,24 +6,15 @@ const randomize = document.querySelector('.randomize');
 const Quote = document.querySelector('.Quote');
 
 /**
- * add html markup to bare website from array element
- * @param {array} array website needing html markup
- * @return {array} array with html markup
- * @example 'www.motoslave.com' ->
- * '<a href="http//www.motoslave.com">www.motoslave.com</a>'
+ * Wrap string in html a:href markup
+ * @param {string} string string to be wrapped in HTML a:href markup
+ * @return {string} wrapped string in HTML a:href markup
  */
-function addMarkup(array) {
-  const markupSite = [];
-  for (let index = 0; index < array.length; index++) {
-    markupSite[index] =
-      '<a href="https://' +
-      array[index] +
-      '">' +
-      array[index] +
-      '</a>';
-  }
-  return markupSite;
-}
+function addMarkupString(string) {
+  const prefix = '<a href="https://' + string + '">';
+  const postfix = '</a>';
+  return string = prefix + string + postfix;
+};
 
 /**
  * Fetch one random item from array
@@ -62,10 +53,7 @@ function fyshuffle(array) {
  */
 function result() {
   let newQuote = randomthingy(store.QuoteText);
-
-  // TODO: add markup AFTER replace
-  const webFull = addMarkup(store.website);
-  const webItem = randomthingy(webFull);
+  // let newQuote = (store.QuoteText[0]);
 
   const getName = fyshuffle(store.suspects);
 
@@ -121,7 +109,7 @@ function result() {
       .replace(/:insertverb:/g, randomthingy(store.verb))
       .replace(/:insertverb2:/g, randomthingy(store.verb))
 
-      .replace(/:insertwebsite:/g, webItem) // FIXME: speschl
+      .replace(/:insertwebsite:/g, addMarkupString(randomthingy(store.website)))
 
       .replace(/:insertweekday:/g, randomthingy(store.weekday));
 
