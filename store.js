@@ -1,4 +1,4 @@
-// Var voor strings kinky
+/** All the qupotes/stories */
 export const QuoteText = [
   // TODO: fixi fix this editing and proofing
   `There are many :insertadjective: ways to choose what to read. <br>
@@ -216,7 +216,7 @@ export const bodyPart = [
   'tummy', 'tail', 'claws',
 ];
 
-// :insertplace: - imagine a the infront o these
+// :insertplace: - imagine a: the -infront o these.
 export const place = [
   'Twine Server', 'discord-server', 'coffee shop', 'submarine',
   'Somnium Inn', 'Sugarcube Clubhouse', 'Lost Harlowe', 'Snowman peak',
@@ -260,7 +260,7 @@ export const illness = [
   'alien hand syndrome', 'stone man\'s disease', 'Amon\'s Gus disease',
 ];
 
-// twine discord server usual suspects
+// Twine discord server usual suspects
 export const suspects = [
   'Cycy', 'Gwen', 'Redsea', 'Lychgate', 'Jay', 'TRBRY', 'Chapel', 'Greyelf',
   'TME', 'Somnium', 'Haley Scribe', 'Ghost', 'Lavorther',
