@@ -1,8 +1,12 @@
 import * as store from './store.js';
 
+/** Name from HTML input field ONE - customname1 */
 const nameOne = document.getElementById('customname1');
+/** Name from HTML input field TWO - customname2  */
 const nameTwo = document.getElementById('customname2');
+/** HTML button */
 const randomize = document.querySelector('.randomize');
+/** Quote/Story HTML element */
 const Quote = document.querySelector('.Quote');
 
 /**
@@ -16,6 +20,7 @@ function addMarkupString(string) {
   return string = prefix + string + postfix;
 };
 
+
 /**
  * Fetch one random element from an array
  * @param {array} array any primitive array; cities like: Tokyo, London, Berlin.
@@ -24,6 +29,7 @@ function addMarkupString(string) {
 function randomthingy(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
+
 
 /**
 * Shuffles an array in place. This using the Fisher-Yates algorithm,
@@ -48,12 +54,13 @@ function shuffle(array) {
   return array;
 }
 
+
 /**
  * Generates the string/story - super huge function like mega gazillion long.
  */
 function result() {
   let newQuote = randomthingy(store.QuoteText);
-  // let newQuote = (store.QuoteText[store.QuoteText.length-1]);
+  // Let newQuote = (store.QuoteText[store.QuoteText.length-1]);
 
   const getName = shuffle(store.suspects);
 
@@ -105,13 +112,15 @@ function result() {
       .replace(/:insertvegetable:/g, randomthingy(store.veggie))
       .replace(/:insertvegetable2:/g, randomthingy(store.veggie))
 
-
       .replace(/:insertverb:/g, randomthingy(store.verb))
       .replace(/:insertverb2:/g, randomthingy(store.verb))
 
-      .replace(/:insertwebsite:/g, addMarkupString(randomthingy(store.website)))
+      .replace(/:insertwebsite:/g, addMarkupString(
+          randomthingy(store.website),
+      ))
 
       .replace(/:insertweekday:/g, randomthingy(store.weekday));
+
 
   /**
  * Wraps string with html class of .person + .name
@@ -125,34 +134,32 @@ function result() {
     return prefix + name + postfix;
   }
 
-  // check if name 1 is present and regex it away otherwise not
+  // Check if name 1 is present and regex it away otherwise not
   if (nameOne.value !== '') {
     let name = nameOne.value;
     name = name.charAt(0).toUpperCase() + name.slice(1);
     newQuote = newQuote
         .replace(/:Cycy:/g, addSpanClass(name));
-    // lege var beter maken
+    // Populate empty name field
   } else {
     newQuote = newQuote
         .replace(/:Cycy:/g, addSpanClass(name1));
   }
 
-  // check if name 2 is present and regex it away otherwise not
+  // Check if name 2 is present and regex it away otherwise not
   if (nameTwo.value !== '') {
     let name = nameTwo.value;
     name = name.charAt(0).toUpperCase() + name.slice(1);
     newQuote = newQuote
         .replace(/:Gwen:/g, addSpanClass(name));
-    // lege var beter maken
+    // Populate empty name field
   } else {
     newQuote = newQuote
         .replace(/:Gwen:/g, addSpanClass(name2));
   }
 
-  // drukt nieuwe content naarbuiten
-  /** replace Qoute with newQoute, writing this to understand Sjoerd */
+  // Pushes out new content
   Quote.innerHTML = newQuote;
-  // Quote.style.visibility = 'visible';
 }
-// pakt de random knop
+// On button click calls result function populating 'quote'
 randomize.addEventListener('click', result);
