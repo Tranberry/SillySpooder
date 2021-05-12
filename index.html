@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Twine Quote Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twine Quote Generator - SillySpooder</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div>
+  <div class="user-inputs">
+    <!-- customname1 and customname2 could be renamed to userName1 
+      and userName2 for clearer meaning -->
     <label for="customname1">Enter custom name 1:</label>
     <input id="customname1" type="text" placeholder="Name of person one">
   </div>
-  <div>
+  <div class="user-inputs">
     <label for="customname2">Enter custom name 2:</label>
     <input id="customname2" type="text" placeholder="Name of person two">
   </div>
-  <div>
-    <button class="randomize">Generate random weirdness</button>
+  <div class="btnCon">
+    <!-- randomaze could be renamed to generate or generateQuote, 
+      why is this a class instead of an ID? -->
+    <button id="generateQuote" class="randomize">Generate random weirdness</button>
   </div>
   <p class="Quote"></p>
-  <script type="module" src="spooder.js"></script>
+
+  <script type="module" src="./spooder.js"></script>
 </body>
 
 </html>

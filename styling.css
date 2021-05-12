@@ -1,0 +1,140 @@
+:root {
+  /* colors */
+  --clr-alpha-900: hsla(0, 0%, 0%, 0.502);
+  --clr-interact-100: hsl(145, 63%, 42%);
+  --clr-interact-200: hsl(145, 51%, 53%);
+  --clr-main-100: hsl(0, 0%, 100%);
+  --clr-main-200: hsl(205, 16%, 85%);
+  --clr-main-800: hsl(214, 7%, 19%);
+  --clr-main-900: hsl(206, 9%, 15%);
+  --clr-dragin: hsl(337, 100%, 62%);
+  --clr-gwen: hsl(281, 43%, 50%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  background-color: var(--clr-main-900);
+  color: var(--clr-main-100);
+  min-height: 100vh;
+  line-height: 1.4;
+  display: grid;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  justify-items: center;
+  overflow-y: scroll;
+  /* Show vertical scrollbar */
+}
+
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+}
+
+input:focus {
+  outline: 0;
+}
+
+input {
+  background-color: var(--clr-main-200);
+  color: var(--clr-main-900);
+  padding: 0.8ch 1.2ch;
+  border-radius: 0.2ch;
+  font-size: 1.2em;
+}
+
+label {
+  font-size: 1.2em;
+  display: none;
+}
+
+button {
+  height: 100%;
+  width: 100%;
+  padding: 1ch 0;
+  border-radius: 0.2ch;
+  background-color: var(--clr-interact-100);
+  color: var(--clr-main-200);
+  font-size: 1.4em;
+  display: block;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--clr-interact-200);
+  color: var(--clr-main-100);
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--clr-main-200);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--clr-interact-100);
+}
+
+.container {
+  margin-top: 2ch;
+  padding: 2ch 1.6ch;
+  font-size: inherit;
+  width: 80ch;
+  background: var(--clr-main-800);
+  border-radius: 1ch;
+  display: grid;
+  gap: 1rem;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.user-inputs {
+  display: grid;
+}
+
+.person {
+  color: var(--clr-interact-200);
+}
+
+.Cycy {
+  color: var(--clr-dragin);
+}
+
+.Gwen {
+  color: var(--clr-gwen);
+}
+
+#theQuote {
+  font-size: 1.45em;
+  background-color: var(--clr-main-900);
+  padding: 2ch;
+  border-radius: 0.4ch;
+}/*# sourceMappingURL=styling.css.map */

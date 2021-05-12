@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twine Quote Generator - SillySpooder fork</title>
+  <link rel="stylesheet" href="./styling.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="user-inputs">
+      <!-- customname1 and customname2 could be renamed to userName1
+        and userName2 for clearer meaning -->
+      <label for="userName1">Enter name for person One:</label>
+      <input id="userName1" type="text" placeholder="Name of person one">
+    </div>
+    <div class="user-inputs">
+      <label for="userName2">Enter name for person Two:</label>
+      <input id="userName2" type="text" placeholder="Name of person two">
+    </div>
+    <div class="btnCon">
+      <!-- randomaze could be renamed to generate or generateQuote,
+        why is this a class instead of an ID? -->
+      <button id="generateQuote">Generate random weirdness</button>
+    </div>
+    <p id="theQuote"></p>
+  </div>
+
+  <script type="module" src="./silly.js"></script>
+</body>
+
+</html>

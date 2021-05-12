@@ -51,7 +51,7 @@ export const QuoteText = [
   `A :insertadjective: fairy princess movie is coming out soon!
   It will feature Snow-:Cycy: and the :insertnumber: dwarfs.<br><br>
   Synopsis:<br>
-  Snow-:Cycy: is a princess whose beauty challanges the evil queen. Hence
+  Snow-:Cycy: is a princess whose beauty challenges the evil queen. Hence
   :Cycy: is forced to flee from :insertcity:-castle, and hides in the
   :insertplace:. There, she discovers the dwarfs playing with their
   :insertpluralnoun:.<br>
@@ -181,7 +181,7 @@ export const substance = [
   'rasin', 'french fries',
 ];
 // :insertevent:
-export const eventthing = [
+export const eventThing = [
   'twine jam', 'skribbl.io tournament', 'dungeon night at Somnium\'s place',
   'voice channel party', 'sugarcube livestream',
   'slumber night at :Gwen:\'s', 'coding night', 'bulli :Gwen: day',
@@ -226,7 +226,7 @@ export const place = [
 // :insertnumber:
 export const number = [
   'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
-  'ten', 'eleven', 'ninety-six', 'four-houndred-twenty',
+  'ten', 'eleven', 'ninety-six', 'four-hundred-twenty',
 ];
 
 // :insertwebsite:
