@@ -1,4 +1,4 @@
-/** All the qupotes/stories */
+/** All the quotes/stories */
 export const QuoteText = [
   // TODO: fixi fix this editing and proofing
   `There are many :insertadjective: ways to choose what to read. <br>
@@ -178,7 +178,7 @@ export const fluid = [
 // :insertsubstance:
 export const substance = [
   'iron', 'sugar', 'soda', 'jello', 'donuts', 'cookies', 'rasgulla', 'salt',
-  'rasin', 'french fries',
+  'raisin', 'french fries',
 ];
 // :insertevent:
 export const eventThing = [
@@ -216,7 +216,7 @@ export const bodyPart = [
   'tummy', 'tail', 'claws',
 ];
 
-// :insertplace: - imagine a: the -infront o these.
+// :insertplace: - imagine a: the -in front o these.
 export const place = [
   'Twine Server', 'discord-server', 'coffee shop', 'submarine',
   'Somnium Inn', 'Sugarcube Clubhouse', 'Lost Harlowe', 'Snowman peak',
